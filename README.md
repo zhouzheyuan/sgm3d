@@ -1,9 +1,11 @@
 # SGM3D
 
 **SGM3D: Stereo Guided Monocular 3D Object Detection**
+
 Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang Xue, Jianfeng Feng
+
 [`[Paper]`](https://arxiv.org/pdf/2112.01914.pdf).
-<!-- ![demo](docs/demo.gif) -->
+![demo](docs/sgm3d_demo.gif)
 
 
 ## Overview
@@ -22,7 +24,7 @@ Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang 
 ## Model Zoo
 
 ### KITTI 3D Object Detection Baselines
-Selected supported methods are shown in the below table. The results are the 3D detection performance on the *val* set of KITTI dataset.
+Selected supported methods are shown in the below table. The results are the 3D detection performance of car class on the *val* set of KITTI dataset.
 
 |                                             | Easy@R40 | Mod.@R40 | Hard@R40 | download | 
 |:-------------------------------------------:|:--------:|:--------:|:--------:|:--------:|
@@ -40,7 +42,7 @@ Please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) to learn more usag
 
 
 ## Acknowledgements
-'SGM3D' is based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet). 
+`SGM3D` is based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet). 
 
 
 ## Citation 
