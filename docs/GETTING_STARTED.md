@@ -9,19 +9,25 @@ Currently we provide the dataloader of KITTI dataset and NuScenes dataset, and t
 
 ### KITTI Dataset
 * Please download the official [KITTI 3D object detection](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) dataset and organize the downloaded files as follows (the road planes could be downloaded from [[road plane]](https://drive.google.com/file/d/1d5mq0RXRnvHPVeKx6Q612z0YRO1t2wAp/view?usp=sharing), which are optional for data augmentation in the training):
-* If you would like to train [CaDDN](../tools/cfgs/kitti_models/CaDDN.yaml), download the precomputed [depth maps](https://drive.google.com/file/d/1qFZux7KC_gJ0UHEg-qGJKqteE9Ivojin/view?usp=sharing) for the KITTI training set
-* If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), download the precomputed [pseudo-lidar_velodyne](https://drive.google.com/file/d/10txZOtKk_aY3B7AhHjJPMCiRf5pP62nV/view?usp=sharing) for the KITTI training set
+* If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), download the precomputed [depth maps](https://drive.google.com/file/d/1qFZux7KC_gJ0UHEg-qGJKqteE9Ivojin/view?usp=sharing) and [pseudo-lidar_velodyne](https://drive.google.com/file/d/10txZOtKk_aY3B7AhHjJPMCiRf5pP62nV/view?usp=sharing) for the KITTI training set
 * NOTE: if you already have the data infos from `pcdet v0.1`, you can choose to use the old infos and set the DATABASE_WITH_FAKELIDAR option in tools/cfgs/dataset_configs/kitti_dataset.yaml as True. The second choice is that you can create the infos and gt database again and leave the config unchanged.
 
 ```
-OpenPCDet
+sgm3d
 ├── data
 │   ├── kitti
 │   │   │── ImageSets
 │   │   │── training
-│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes) & (optional: depth_2)
+│   │   │   ├──calib
+│   │   │   ├──image_2
+│   │   │   ├──depth_2
+│   │   │   ├──label_2
+│   │   │   ├──planes
+│   │   │   |──velodyne --> pseudo-liear_velodyne
 │   │   │── testing
-│   │   │   ├──calib & velodyne & image_2
+│   │   │   ├──calib
+│   │   │   ├──image_2
+│   │   │   |──velodyne
 ├── pcdet
 ├── tools
 ```
@@ -34,9 +40,7 @@ python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/datas
 
 
 ## Pretrained Models
-If you would like to train [CaDDN](../tools/cfgs/kitti_models/CaDDN.yaml), download the pretrained [DeepLabV3 model](https://download.pytorch.org/models/deeplabv3_resnet101_coco-586e9e4e.pth) and place within the `checkpoints` directory
-
-If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), download the pretrained [distilled_ppc_stereo_80](https://drive.google.com/file/d/1K7SimAD2eNObHtHkG_Irc-V6SjFQVcE2/view?usp=sharing) and place within the `checkpoints` directory
+If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), download the pretrained [DeepLabV3 model](https://download.pytorch.org/models/deeplabv3_resnet101_coco-586e9e4e.pth), [distilled_ppc_stereo_80](https://drive.google.com/file/d/1K7SimAD2eNObHtHkG_Irc-V6SjFQVcE2/view?usp=sharing) and place within the `checkpoints` directory
 ```
 OpenPCDet
 ├── checkpoints
