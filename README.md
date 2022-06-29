@@ -19,7 +19,7 @@ Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang 
 
 ## Changelog
 
-[2021-06-24] `SGM3D` is released. 
+[2022-06-24] `SGM3D` is released. 
 
 
 ## Model Zoo
