@@ -4,7 +4,7 @@
 
 Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang Xue, Jianfeng Feng
 
-[`[Paper]`](https://arxiv.org/pdf/2112.01914.pdf).
+[`[Paper]`](https://arxiv.org/pdf/2112.01914.pdf)
 
 ![demo](docs/sgm3d_demo.gif)
 
