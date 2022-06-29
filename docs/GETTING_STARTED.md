@@ -35,6 +35,7 @@ python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/datas
 
 ## Pretrained Models
 If you would like to train [CaDDN](../tools/cfgs/kitti_models/CaDDN.yaml), download the pretrained [DeepLabV3 model](https://download.pytorch.org/models/deeplabv3_resnet101_coco-586e9e4e.pth) and place within the `checkpoints` directory
+
 If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), download the pretrained [distilled_ppc_stereo_80](https://drive.google.com/file/d/1K7SimAD2eNObHtHkG_Irc-V6SjFQVcE2/view?usp=sharing) and place within the `checkpoints` directory
 ```
 OpenPCDet
@@ -74,7 +75,8 @@ sh scripts/slurm_test_mgpu.sh ${PARTITION} ${NUM_GPUS} \
 
 ### Train a model
 You could optionally add extra command line parameters `--batch_size ${BATCH_SIZE}` and `--epochs ${EPOCHS}` to specify your preferred parameters. 
-If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), use `--pretrained_models ../checkpoints/ppc_stereo_80.pth` to load the pretrained stereo model.
+
+If you would like to train [SGM3D](../tools/cfgs/kitti_models/sgm3d.yaml), use `--pretrained_models ../checkpoints/distilled_ppc_stereo_80.pth` to load the pretrained stereo model.
 
 * Train with multiple GPUs or multiple machines
 ```shell script
