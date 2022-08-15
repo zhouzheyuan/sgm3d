@@ -1,10 +1,9 @@
 # SGM3D
 
-**SGM3D: Stereo Guided Monocular 3D Object Detection**
+> [**SGM3D: Stereo Guided Monocular 3D Object Detection**](https://ieeexplore.ieee.org/document/9832729),  
+> Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang Xue, Jianfeng Feng  
+> **RA-L 2022**
 
-Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang Xue, Jianfeng Feng
-
-[`[Paper]`](https://arxiv.org/pdf/2112.01914.pdf)
 
 ![demo](docs/sgm3d_demo.gif)
 
@@ -19,8 +18,11 @@ Zheyuan Zhou, Liang Du, Xiaoqing Ye, Zhikang Zou, Xiao Tan, Li Zhang, Xiangyang 
 
 ## Changelog
 
-[2022-06-24] `SGM3D` is released. 
+[2022-07-14] Paper is received by [RA-L](https://ieeexplore.ieee.org/document/9832729).
 
+[2022-06-24] Code is released.
+
+[2021-12-03] Paper is released on [Arxiv](https://arxiv.org/pdf/2112.01914.pdf).
 
 ## Model Zoo
 
@@ -52,11 +54,14 @@ If you find this project useful in your research, please consider cite:
 
 ```bibtex
 @article{zhou2021sgm3d,
-  title={SGM3D: Stereo Guided Monocular 3D Object Detection},
+  title={SGM3D: Stereo Guided Monocular 3D Object Detection}, 
   author={Zhou, Zheyuan and Du, Liang and Ye, Xiaoqing and Zou, Zhikang and Tan, Xiao and Zhang, Li and Xue, Xiangyang and Feng, Jianfeng},
-  journal={arXiv},
-  year={2021}
-}
+  journal={IEEE Robotics and Automation Letters}, 
+  year={2022},
+  volume={7},
+  number={4},
+  pages={10478-10485},
+  doi={10.1109/LRA.2022.3191849}}
 ```
 
 
