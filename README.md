@@ -53,7 +53,7 @@ If you find this project useful in your research, please consider cite:
 
 
 ```bibtex
-@article{zhou2021sgm3d,
+@article{zhou2022sgm3d,
   title={SGM3D: Stereo Guided Monocular 3D Object Detection}, 
   author={Zhou, Zheyuan and Du, Liang and Ye, Xiaoqing and Zou, Zhikang and Tan, Xiao and Zhang, Li and Xue, Xiangyang and Feng, Jianfeng},
   journal={IEEE Robotics and Automation Letters}, 
